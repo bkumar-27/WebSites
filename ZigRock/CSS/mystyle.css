@@ -48,10 +48,35 @@ section {
 	text-transform: uppercase;
 	margin: 0 8px;
 	padding: 12px 46px;
-	transition: all 5s;
+	transition: all 2s linear;
 	/*------ Custom Css ------*/
-	color: aliceblue;
-	border: 2px solid white;
+	/* color: aliceblue;
+	border: 2px solid white; */
+}
+
+.btn-home {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+	color: #fff;
+	background-color: #ffae2c;
+	border: 1px solid #ffae2c;
+}
+
+.btn-yellow {
+	background-color: #ffae2c;
+	border: 1px solid #ffae2c;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+	background-color: #555;
+	color: #fff;
+	border: 1px solid #555;
 }
 
 /*--------------------------- PreLoader ------------------*/
@@ -141,18 +166,6 @@ section {
 	margin: 8px 0 30px 0;
 }
 
-#btn-home {
-	color: #fff;
-	border: 1px solid #fff;
-}
-
-.btn-home:hover,
-.btn-home:focus {
-	color: #fff;
-	background-color: #ffae2c;
-	border: 1px solid #ffae2c;
-}
-
 #arrow-down {
 	position: absolute;
 	left: 50%;
@@ -183,7 +196,7 @@ section {
 	padding: 60px 0;
 }
 
-/*------ Vertical Heading ------------*/
+/*------  Headings ------------*/
 .vertical-heading {
 	margin-top: -20px;
 }
@@ -195,16 +208,52 @@ section {
 	text-transform: uppercase;
 	word-spacing: 10px;
 	display: inline-block;
+	margin-bottom: 10px;
 	transform: rotate(-90deg);
 	position: relative;
 	top: 68px;
 	left: -60px;
 }
 
+.vertical-heading h5,
+.horizontal-heading h5 {
+	color: #ffae2c;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-spacing: 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
 .vertical-heading h2 {
 	margin-left: 30px;
 	font-size: 44px;
 	font-weight: 200;
+}
+
+/*
+.vertical-heading h2,
+.horizontal-heading h2 {
+	font-size: 44px;
+	font-weight: 200;
+	line-height: 48px;
+	margin: 0;
+}
+*/
+.horizontal-heading {
+	margin-bottom: 40px;
+}
+
+.horizontal-heading h5 {
+	margin-bottom: 5px;
+}
+
+.horizontal-heading h2 {
+	font-size: 44px;
+	font-weight: 200;
+	line-height: 48px;
+	margin: 0;
 }
 
 /*------- About-01 --------------*/
@@ -435,4 +484,154 @@ ul.social-list li a:hover {
 	font-weight: 600;
 	font-size: 24px;
 	padding: 10px 5px;
+}
+
+/*--------------- Services 01-------------------*/
+#services-01 img {
+	margin: 30px 0;
+}
+
+.service {
+	margin: 30px 0;
+}
+
+.service .icon {
+	font-size: 42px;
+	margin: 0;
+	transition: all 400ms linear;
+}
+
+.service:hover .icon {
+	color: #ffae2c;
+	transform: translateX(-20px);
+}
+
+.service h5 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffae2c;
+	margin-bottom: 6px;
+	transition: all 400ms linear;
+}
+
+.service:hover h5 {
+	color: #6c7e86;
+}
+
+.service h4 {
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+
+.service p {
+	line-height: normal;
+}
+
+/*----- Services-02------------*/
+#services-02 {
+	background-color: #e4e6e3;
+}
+
+#services-tabs ul {
+	margin-bottom: 30px;
+}
+
+#services-tabs ul li {
+	padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+	text-decoration: none;
+	font-family: 'Jost', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #555;
+	font-weight: 400;
+	padding: 0;
+}
+
+#services-tabs ul li.r-tabs-state-active a {
+	color: #ffae2c;
+	font-weight: 800;
+	border-bottom: 3px solid #ffae2c;
+	padding-bottom: 5px;
+	transition: all 300ms linear;
+}
+
+.service-tab .col-md-6 {
+	padding: 0;
+}
+
+.service-tab img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.service-tab,
+.tab-bg {
+	background-color: #fff;
+	height: 100%;
+	padding: 50px 40px;
+}
+
+.service-tab,
+h2 {
+	font-family: 'jost', sans-serif;
+	font-weight: 100;
+	font-size: 42px;
+}
+
+.service-tab,
+h3 {
+	font-size: 34px;
+	margin: 20px 0;
+}
+
+.service-tab p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/*---------------- Portfolio ---------------*/
+#portfolio .vertical-heading {
+	margin-bottom: 50px;
+}
+
+.grid .col-md-3 {
+	padding: 0;
+	overflow: hidden;
+}
+
+.portfolio-buttons {
+	margin-bottom: 10px;
+	padding: 20px 25px 20px 0;
+}
+
+.portfolio-buttons button {
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	background: transparent;
+	padding: 5px;
+	margin: 5px 15px 10px 0;
+	transition: all 300ms ease-in-out;
+}
+
+.portfolio-buttons button.active {
+	color: #ffae2c;
+	border-bottom: 3px solid #ffae2c;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/*-------- Zoom Effect ------------*/
+.portfolio-item img {
+	width: 100%;
+	height: auto;
+	transition: all 400ms ease;
+}
+
+.portfolio-item:hover img {
+	transform: scale(1.4);
 }

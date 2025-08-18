@@ -41,3 +41,55 @@ $(function () {
 		offset: 'bottom-in-view'
 	});
 });
+
+
+
+/*------------------------------ Responsive Tabs-----------------------*/
+
+$(function () {
+	$('#services-tabs').responsiveTabs({
+		animation: 'slide',
+	});
+});
+
+
+/*---------------Isotope-Portfolio --------*/
+
+
+
+$(window).on('load', function () {
+
+	// init Isotope
+	var $grid = $('.grid').isotope({});
+	// filter items on button click
+	$('.portfolio-buttons').on('click', 'button', function () {
+
+		var filterValue = $(this).attr('data-filter');
+
+		$grid.isotope({ filter: filterValue });
+
+		/*--------Adding Active Class-----------*/
+
+		$('.portfolio-buttons').find('.active').removeClass('active');
+		$(this).addClass('active')
+	});
+});
+
+
+
+
+/*----------- Magnific popup ---------*/
+
+$(function () {
+	$('.portfolio-item').magnificPopup({
+		delegate: 'a', // child items selector, by clicking on it popup will open
+		type: 'image',
+
+		gallery: {
+			enabled: true
+		}
+
+	});
+});
+
+
