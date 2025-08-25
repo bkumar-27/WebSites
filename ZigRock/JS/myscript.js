@@ -3,11 +3,9 @@ $(window).on('load', function () {
 	$('#preloader_status').fadeOut();
 	$('#preloader').delay(350).fadeOut('slow');
 });
-
-
 /*-------- owl carousel --------------*/
 $(document).ready(function () {
-	$(".owl-carousel").owlCarousel({
+	$("#team-members").owlCarousel({
 
 		items: 2,
 		autoplay: true,
@@ -19,13 +17,7 @@ $(document).ready(function () {
 		navText: ['<span><i class="fas fa-angle-left"></i></span>', '<span><i class="fas fa-angle-right"></i></span>']
 	});
 });
-
-
-
-
 /*-------------- Progress Bar-------------------*/
-
-
 $(function () {
 
 	$("#progress-elements").waypoint(function () {
@@ -92,4 +84,51 @@ $(function () {
 	});
 });
 
+
+
+
+/*---------Testimonials-Owl Carousel --------------*/
+
+/*-------- owl carousel --------------*/
+$(document).ready(function () {
+	$("#testimonial-slider").owlCarousel({
+
+		items: 1,
+		autoplay: true,
+		smartSpeed: 750,
+		loop: true,
+		autoplayHoverPause: true,
+		dots: false,
+		nav: true,
+		navText: ['<span><i class="fas fa-angle-left"></i></span>', '<span><i class="fas fa-angle-right"></i></span>']
+	});
+});
+
+
+/*------------- Counter ------------*/
+
+
+$(function () {
+	$('.counter').counterUp({
+		delay: 20,
+		time: 2000
+	});
+});
+
+
+
+/*-------Clients- owl carousel --------------*/
+$(document).ready(function () {
+	$("#clients-list").owlCarousel({
+
+		items: 6,
+		autoplay: true,
+		smartSpeed: 750,
+		loop: true,
+		autoplayHoverPause: true,
+		dots: false,
+		nav: true,
+		navText: ['<span><i class="fas fa-angle-left"></i></span>', '<span><i class="fas fa-angle-right"></i></span>']
+	});
+});
 
